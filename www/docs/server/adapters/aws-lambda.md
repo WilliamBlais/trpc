@@ -173,7 +173,7 @@ const createContext = ({
   context,
 }: CreateAWSLambdaContextOptions<APIGatewayProxyEventV2>) => ({
   // your context
-}); 
+});
 type Context = Awaited<ReturnType<typeof createContext>>;
 
 export const handler = awslambda.streamifyResponse(

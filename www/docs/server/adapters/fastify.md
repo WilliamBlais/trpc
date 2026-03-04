@@ -185,10 +185,10 @@ server.register(fastifyTRPCPlugin, {
 
 Your endpoints are now available via HTTP!
 
-| Endpoint     | HTTP URI                                                                                                       |
-| ------------ | -------------------------------------------------------------------------------------------------------------- |
-| `getUserById`    | `GET http://localhost:3000/trpc/getUserById?input=INPUT` <br/><br/>where `INPUT` is a URI-encoded JSON string. |
-| `createUser` | `POST http://localhost:3000/trpc/createUser` <br/><br/>with `req.body` of type `User`                          |
+| Endpoint      | HTTP URI                                                                                                       |
+| ------------- | -------------------------------------------------------------------------------------------------------------- |
+| `getUserById` | `GET http://localhost:3000/trpc/getUserById?input=INPUT` <br/><br/>where `INPUT` is a URI-encoded JSON string. |
+| `createUser`  | `POST http://localhost:3000/trpc/createUser` <br/><br/>with `req.body` of type `User`                          |
 
 ## Enable WebSockets
 
@@ -284,8 +284,8 @@ You can now subscribe to the `randomNumber` topic and should receive a random nu
 
 ## Fastify plugin options
 
-| name        | type                                              | optional | default   | description                                                     |
-| ----------- | ------------------------------------------------- | -------- | --------- | --------------------------------------------------------------- |
-| prefix      | `string`                                          | `true`   | `"/trpc"` | URL prefix for tRPC routes                                      |
-| useWSS      | `boolean`                                         | `true`   | `false`   | Enable WebSocket support via `@fastify/websocket`                |
-| trpcOptions | `FastifyHandlerOptions<AppRouter, Request, Reply>` | `false`  | `n/a`     | tRPC handler options including `router`, `createContext`, etc.   |
+| name        | type                                               | optional | default   | description                                                    |
+| ----------- | -------------------------------------------------- | -------- | --------- | -------------------------------------------------------------- |
+| prefix      | `string`                                           | `true`   | `"/trpc"` | URL prefix for tRPC routes                                     |
+| useWSS      | `boolean`                                          | `true`   | `false`   | Enable WebSocket support via `@fastify/websocket`              |
+| trpcOptions | `FastifyHandlerOptions<AppRouter, Request, Reply>` | `false`  | `n/a`     | tRPC handler options including `router`, `createContext`, etc. |

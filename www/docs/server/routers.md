@@ -80,7 +80,7 @@ const appRouter = router({
   nested1: router({
     proc: publicProcedure.query(() => '...'),
   }),
-  // Using an inline sub-router 
+  // Using an inline sub-router
   nested2: {
     proc: publicProcedure.query(() => '...'),
   },

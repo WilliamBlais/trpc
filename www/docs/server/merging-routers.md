@@ -79,8 +79,8 @@ import { userRouter } from './user';
 import { postRouter } from './post';
 
 const appRouter = router({
-  user: userRouter, 
-  post: postRouter, 
+  user: userRouter,
+  post: postRouter,
 });
 
 appRouter.user
