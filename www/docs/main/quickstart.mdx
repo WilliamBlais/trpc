@@ -84,7 +84,7 @@ tRPC is split between several packages, so you can install only what you need. M
 
 :::info Requirements
 - tRPC requires TypeScript >=5.7.2
-- We strongly recommend you using `"strict": true` in your `tsconfig.json` as we don't officially support non-strict mode.
+- We strongly recommend using `"strict": true` in your `tsconfig.json` as we don't officially support non-strict mode.
 :::
 
 Start off by installing the `@trpc/server` and `@trpc/client` packages:
@@ -141,7 +141,7 @@ export const router = t.router;
 export const publicProcedure = t.procedure;
 ```
 
-Next, we'll initialize our main router instance, commonly referred to as `appRouter`, in which we'll later add procedures to. Lastly, we need to export the type of the router which we'll later use on the client side.
+Next, we'll initialize our main router instance, commonly referred to as `appRouter`, to which we'll later add procedures. Lastly, we need to export the type of the router which we'll later use on the client side.
 
 ```ts twoslash title='server/appRouter.ts'
 // @filename: trpc.ts
@@ -483,7 +483,7 @@ const trpc = createTRPCClient<AppRouter>({
 
 Links in tRPC are similar to links in GraphQL, they let us control the data flow to the server. In the example above, we use the [httpBatchLink](/docs/client/links/httpBatchLink), which automatically batches up multiple calls into a single HTTP request. For more in-depth usage of links, see the [links documentation](/docs/client/links).
 
-### 2. Type Inferrence & Autocomplete
+### 2. Type Inference & Autocomplete
 
 You now have access to your API procedures on the `trpc` object. Try it out!
 

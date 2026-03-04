@@ -14,7 +14,7 @@ We provide a getQueryKey helper that accepts a `router` or `procedure` so that y
 function getQueryKey(
   procedure: AnyQueryProcedure,
   input?: DeepPartial<TInput>,
-  type?: QueryType; /** @default 'any' */
+  type?: QueryType, /** @default 'any' */
 ): TRPCQueryKey;
 
 // Routers
